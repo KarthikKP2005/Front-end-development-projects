@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer Alarm</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Timer Alarm</h1>
-    <div class="timer-container">
-        <input type="number" id="hours" placeholder="Hours">
-        <input type="number" id="minutes" placeholder="Minutes">
-        <input type="number" id="seconds" placeholder="Seconds">
-        <button id="start-btn">Start</button>
-        <button id="stop-btn" disabled>Stop</button>
-        <button id="reset-btn">Reset</button>
-        <p id="timer-display">00:00:00</p>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!--font awesome(for icons)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
-    <script src="script.js"></script>
-</body>
+    <!--css file-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <div class="wrapper">
+      <form action="">
+         <h1>Login</h1>
+
+         <div class="input-box">
+            <i class="fas fa-user icon"></i>
+            <input type="text" required>
+            <label>Username</label>
+         </div>
+         <div class="input-box">
+            <i class="fas fa-lock icon"></i>
+            <input type="password" required>
+            <label>Password</label>
+         </div>
+
+         <div class="row">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#">Forgot Password?</a>
+         </div>
+         <button class="btn" type="submit">Login</button>
+         <div class="signup-link">
+            <p>Don't have an account? <a href="#">Signup now</a></p>
+         </div>
+      </form>
+   </div>
+  </body>
+  <script src="script.js"></script>
 </html>
